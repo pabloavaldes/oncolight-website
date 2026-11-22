@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OncoLight 4.0 | Imaging science</title>
+  <meta name="description" content="Learn how hyperspectral measurements separate a fluorescent molecule’s signal from tissue background and how tissue affects the light.">
+  <meta name="theme-color" content="#050b18">
+  <meta property="og:title" content="OncoLight | Imaging science">
+  <meta property="og:description" content="Learn how hyperspectral measurements separate a fluorescent molecule’s signal from tissue background and how tissue affects the light.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../brand/oncolight-mark-transparent.png">
+  <link rel="preload" href="../fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../science.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="../" aria-label="OncoLight home. Decoding cancer’s optical fingerprint.">
+      <span class="wordmark-art"><img alt="" src="../brand/oncolight-logo-dark.png" width="697" height="194"></span>
+      <span class="wordmark-tagline">Decoding cancer’s optical fingerprint</span>
+    </a>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="../company/">Company</a>
+      <a href="./" aria-current="page">Science</a>
+      <a href="../platforms/">Platforms</a>
+      <a href="../news/">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="sc-page">
+  <header class="sc-intro">
+    <div class="wrap">
+      <p class="section-label">The science</p>
+      <h1>Reading the optical<br>fingerprint of tissue</h1>
+      <p class="sc-lede">A spot of fluorescence can look bright or faint for several reasons. Its spectrum carries information about the molecules that emitted the light and the tissue it traveled through.</p>
+    </div>
+  </header>
+
+  <section class="sc-chapter" aria-labelledby="sc-spectrum-title">
+    <div class="wrap sc-spread">
+      <div class="sc-narrative">
+        <h2 id="sc-spectrum-title">A spectrum at each pixel</h2>
+        <p>A color camera records only red, green, and blue. However, a hyperspectral camera measures light across many wavelengths at each pixel. That pattern is the optical fingerprint of the tissue at that point in the surgical field. In fluorescence-guided glioma surgery, one signal of interest comes from protoporphyrin IX (PpIX), which emits red light when excited by blue light.</p>
+        <p>The challenge in surgery is capturing enough light to measure faint fluorescence while preserving detail and keeping pace with a moving field. OncoLight captures the spectrum at every pixel in a single exposure for high-resolution imaging in real time. We’re developing the optics and software together to preserve both the detail of the surgical view and the spectral differences that distinguish one signal from another.</p>
+        <p>Our surgeons and engineers design these molecular imaging tools together. What surgeons need to see during an operation guides how we build the technology and fit it into the surgical workflow.</p>
+      </div>
+      <figure class="sc-figure">
+        <a href="../figures/conventional-rgb-fluorescence.webp" aria-label="Open full-resolution conventional rgb fluorescence figure"><img src="../figures/conventional-rgb-fluorescence.webp" width="1578" height="1678" loading="lazy" decoding="async" alt="Conventional fluorescence on a gridded cortical field. A selected pixel points to three broad RGB passbands over a simulated spectrum. The cube below shows the three color channels."></a>
+        <figcaption>Simulated cortical field and spectrum. Each RGB channel combines light across a broad range of wavelengths. <a href="../figures/conventional-rgb-fluorescence.webp">View full size</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sc-chapter sc-chapter-map" aria-labelledby="sc-map-title">
+    <div class="wrap sc-spread">
+      <div class="sc-narrative">
+        <h2 id="sc-map-title">Finding a molecule’s contribution</h2>
+        <p>The red light measured at a single pixel can include both PpIX fluorescence and the tissue’s autofluorescence. Each has a characteristic emission pattern. Our software compares the measured spectrum with those patterns to estimate how much each source contributes. Repeating that calculation across the image produces a map of PpIX fluorescence.</p>
+        <p>A weak signal can have more than one explanation. There may be less PpIX, or blood may absorb some of the light before it reaches the camera. Tissue scattering also changes the paths light takes. By measuring reflected light alongside fluorescence, we can account for these effects and better estimate how much of the signal comes from PpIX itself. That distinction matters at a glioma margin, where the visible glow can be faint.</p>
+      </div>
+      <figure class="sc-figure">
+        <a href="../figures/hyperspectral-ppix-fluorescence.webp" aria-label="Open full-resolution hyperspectral ppix fluorescence figure"><img src="../figures/hyperspectral-ppix-fluorescence.webp" width="1578" height="1678" loading="lazy" decoding="async" alt="Reconstructed PpIX fluorescence map of the same cortical field. The selected pixel points to its spectrum, with the PpIX component in teal. Below are 26 wavelength images from 400 to 900 nm."></a>
+        <figcaption>Simulated PpIX fluorescence. Teal shows the relative PpIX signal across the field. The cube shows 26 illustrative wavelength bands, with near-infrared bands in gray. <a href="../figures/hyperspectral-ppix-fluorescence.webp">View full size</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sc-research" id="academic-research" aria-labelledby="sc-research-title">
+    <div class="wrap sc-source">
+      <p class="section-label">Academic research</p>
+      <h2 id="sc-research-title">The science behind optical fingerprinting</h2>
+      <div class="sc-studies">
+        <article>
+          <h3>Hyperspectral imaging in neurosurgery</h3>
+          <p>Our founding team reviewed the cameras and computational methods used to measure reflected light and fluorescence in neurosurgery. The review explains how camera design affects imaging speed, the detail visible across the field, and the wavelengths a system can distinguish.</p>
+          <ul class="sc-papers">
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/39544341/">Review of hyperspectral systems and methods</a><span>Kotwal et al. · <cite>Journal of Biomedical Optics</cite> · 2025</span></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Measuring fluorescence with a probe</h3>
+          <p>A fiber-optic probe measures the spectrum at the point where it touches tissue. An early study used that spectrum to estimate protoporphyrin IX (PpIX) concentration during brain tumor surgery. A follow-up study in low-grade glioma compared the probe measurement with the fluorescence visible to the surgeon.</p>
+          <ul class="sc-papers">
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/21438658/">Quantitative PpIX measurements in brain tumor surgery</a><span>Valdés et al. · <cite>Journal of Neurosurgery</cite> · 2011</span></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/26140489/">Probe spectroscopy in low-grade glioma</a><span>Valdés et al. · <cite>Journal of Neurosurgery</cite> · 2015</span></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Combining fluorescence and reflectance</h3>
+          <p>The probe also measures light reflected from the same tissue. Researchers used the two signals together to estimate PpIX concentration, hemoglobin oxygenation, and light scattering. More recently, the team compared paired spectra with histology to study how these signals vary across glioma tissue.</p>
+          <ul class="sc-papers">
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/22112112/">Measuring glioma biomarkers with a combined probe</a><span>Valdés et al. · <cite>Journal of Biomedical Optics</cite> · 2011</span></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/42969398/">Paired spectra and histology in glioma surgery</a><span>Chiwo et al. · <cite>Neuro-Oncology</cite> · 2026</span></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Mapping fluorescence across the surgical field</h3>
+          <p>Wide-field imaging extends the measurement from one point to an entire image. The researchers estimated fluorophore concentration at each pixel and used reflected light to correct for absorption and scattering in tissue models.</p>
+          <ul class="sc-papers">
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/23152935/">Quantitative fluorescence imaging at each pixel</a><span>Valdés et al. · <cite>Scientific Reports</cite> · 2012</span></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/23903142/">Wide-field quantitative fluorescence imaging during neurosurgery</a><span>Valdés et al. · <cite>Optics Letters</cite> · 2013</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot" id="contact">
+  <div class="wrap">
+    <div class="footer-contact"><div><p class="section-label">Contact</p><h2>Work with OncoLight</h2>
+      <p>For clinical research collaborations, instrument development, and investor inquiries, contact our founding team.</p></div>
+      <a href="mailto:info@oncolight.ai">info@oncolight.ai</a></div>
+    <div class="footer-base"><p>© 2026 OncoLight, Inc. · Houston, Texas</p><p>OncoLight is developing investigational optical fingerprinting platforms for use in surgical imaging. Their safety and effectiveness for guiding surgical decisions have not been established. These platforms have not been cleared or approved by the U.S. Food and Drug Administration (FDA) and are not yet commercially available in the United States.</p></div>
+  </div>
+</footer>
+</body>
+</html>

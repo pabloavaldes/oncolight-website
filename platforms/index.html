@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OncoLight 4.0 | Surgical platforms</title>
+  <meta name="description" content="Explore OncoLight’s exoscope, microscope module, and endoscope-based hyperspectral imaging platform.">
+  <meta name="theme-color" content="#050b18">
+  <meta property="og:title" content="OncoLight | Surgical platforms">
+  <meta property="og:description" content="Explore OncoLight’s exoscope, microscope module, and endoscope-based hyperspectral imaging platform.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../brand/oncolight-mark-transparent.png">
+  <link rel="preload" href="../fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../platform.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="../" aria-label="OncoLight home. Decoding cancer’s optical fingerprint.">
+      <span class="wordmark-art"><img alt="" src="../brand/oncolight-logo-dark.png" width="697" height="194"></span>
+      <span class="wordmark-tagline">Decoding cancer’s optical fingerprint</span>
+    </a>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="../company/">Company</a>
+      <a href="../science/">Science</a>
+      <a href="./" aria-current="page">Platforms</a>
+      <a href="../news/">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="pf-page">
+  <section class="pf-opening" aria-labelledby="pf-heading">
+    <div class="wrap pf-intro">
+      <p class="section-label">Surgical platforms</p>
+      <h1 id="pf-heading">Optical fingerprinting across surgical platforms</h1>
+      <p class="pf-lede">Our imaging hardware and software work together to map tissue fluorescence. The same method can be adapted to the instrument a surgeon uses to see the operative field.</p>
+    </div>
+  </section>
+
+  <section class="pf-configurations" aria-labelledby="pf-config-title">
+    <div class="wrap pf-editorial">
+      <header><p class="section-label">Surgical configurations</p><h2 id="pf-config-title">Three views of the operative field</h2></header>
+      <div class="pf-rows">
+        <article><div class="pf-row-heading"><h3>Exoscope</h3></div><p>The OncoLight imaging head integrates with an articulated robotic arm to capture high-resolution color and hyperspectral images simultaneously in real time as part of the surgical workflow.</p></article>
+        <article><div class="pf-row-heading"><h3>Microscope</h3></div><p>Our hyperspectral module couples to the optical path of existing commercial surgical microscopes. It is designed to capture spectral images in real time while the surgeon continues to work through the microscope.</p></article>
+        <article><div class="pf-row-heading"><h3>Endoscope</h3></div><p>We’re developing a real-time hyperspectral imaging platform for endoscopic and laparoscopic procedures.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pf-processing" aria-labelledby="pf-process-title">
+    <div class="wrap pf-editorial">
+      <div><p class="section-label">Image processing</p><h2 id="pf-process-title">From the imaging head to the surgical display</h2>
+      <p class="pf-support">The camera records light at each point in the field. Our software estimates how much of that signal comes from the fluorescent agent and aligns the resulting map with the color view.</p></div>
+      <div class="pf-disclosures">
+        <details><summary>Explore the five processing stages</summary>
+          <ol class="pf-steps">
+            <li><strong>Illuminate.</strong> The imaging head delivers light to excite fluorescence in the tissue.</li>
+            <li><strong>Capture.</strong> A snapshot camera records a spectrum at each pixel across the 400–900&nbsp;nm band. A second camera records the anatomy in color.</li>
+            <li><strong>Calibrate.</strong> Reference measurements account for the instrument’s response at each wavelength.</li>
+            <li><strong>Separate and correct.</strong> The software separates overlapping emissions and accounts for tissue absorption and scattering.</li>
+            <li><strong>Display.</strong> The resulting map can be viewed alongside the color image or as an overlay.</li>
+          </ol>
+        </details>
+        <details><summary>Optical agents under study</summary>
+          <p>Our first focus is protoporphyrin IX (PpIX), the fluorescent molecule that can accumulate in glioma after 5-ALA administration. We are also studying fluorescein and indocyanine green (ICG). Each has a distinct emission spectrum that the software can use to estimate its contribution.</p>
+        </details>
+        <a class="pf-science-link" href="../science/">Explore the imaging science</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot" id="contact">
+  <div class="wrap">
+    <div class="footer-contact"><div><p class="section-label">Contact</p><h2>Work with OncoLight</h2>
+      <p>For clinical research collaborations, instrument development, and investor inquiries, contact our founding team.</p></div>
+      <a href="mailto:info@oncolight.ai">info@oncolight.ai</a></div>
+    <div class="footer-base"><p>© 2026 OncoLight, Inc. · Houston, Texas</p><p>OncoLight is developing investigational optical fingerprinting platforms for use in surgical imaging. Their safety and effectiveness for guiding surgical decisions have not been established. These platforms have not been cleared or approved by the U.S. Food and Drug Administration (FDA) and are not yet commercially available in the United States.</p></div>
+  </div>
+</footer>
+</body>
+</html>

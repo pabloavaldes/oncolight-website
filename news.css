@@ -1,0 +1,22 @@
+.nw-page { background: #fff; }
+.nw-hero { padding-block: clamp(3rem, 6vw, 6rem); background: #eff5f7; }
+.nw-feed { padding-block: clamp(1rem, 3vw, 3rem) clamp(3.5rem, 6vw, 6rem); }
+.nw-story {
+  display: grid;
+  grid-template-columns: minmax(12.5rem, .55fr) minmax(0, 1.45fr);
+  gap: clamp(1.4rem, 5vw, 5.5rem);
+  padding-block: clamp(2rem, 4vw, 3.9rem);
+  border-bottom: 1px solid var(--line);
+}
+.nw-meta { font-size: 1.25rem; line-height: 1.4; }
+.nw-meta p { color: #215668; font-weight: 620; }
+.nw-meta time { display: block; margin-top: .45rem; color: var(--muted); }
+.nw-copy { max-width: 51rem; }
+.nw-copy h2 { font-size: clamp(1.9rem, 3.15vw, 3.15rem); letter-spacing: -.045em; }
+.nw-copy > p { margin-top: 1rem; color: var(--muted); font-size: 1.25rem; line-height: 1.6; }
+.nw-copy .text-link { margin-top: .65rem; font-size: 1.25rem; }
+@media (max-width: 740px) {
+  .nw-story { grid-template-columns: minmax(0, 1fr); }
+  .nw-meta { display: flex; flex-wrap: wrap; gap: .2rem 1.2rem; }
+  .nw-meta time { margin: 0; }
+}

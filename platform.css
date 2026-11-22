@@ -1,0 +1,38 @@
+.pf-page { color: var(--ink); background: #fff; }
+.pf-page h1, .pf-page h2, .pf-page h3, .pf-page p { margin: 0; }
+.pf-page .section-label { font-size: max(20px, 1.25rem); margin-bottom: 1rem; }
+.pf-opening { background: linear-gradient(115deg, #edf4f7, #f6f9fa 72%); border-bottom: 1px solid var(--line); }
+.pf-intro { padding-block: clamp(3rem, 6.5vw, 6.8rem); }
+.pf-intro h1 { max-width: 19ch; font-size: clamp(3.1rem, 5.6vw, 6.3rem); line-height: 1.025; letter-spacing: -.062em; text-wrap: balance; }
+.pf-lede, .pf-support, .pf-rows article > p, .pf-disclosures details > p, .pf-steps { font-size: max(20px, 1.25rem); line-height: 1.55; }
+.pf-intro .pf-lede, .pf-support, .pf-rows article > p, .pf-disclosures details > p, .pf-steps { color: var(--muted); }
+.pf-intro .pf-lede { margin-top: clamp(1.15rem, 2.2vw, 1.8rem); max-width: 56ch; }
+.pf-configurations, .pf-processing { padding-block: clamp(3.5rem, 6.4vw, 7rem); }
+.pf-editorial { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr); gap: clamp(2rem, 6.2vw, 6.8rem); }
+.pf-editorial h2 { max-width: 17ch; }
+.pf-rows article { padding-block: 1.5rem; border-top: 1px solid var(--line); }
+.pf-rows article:first-child { border-color: #627c8f; }
+.pf-rows article:last-child { border-bottom: 1px solid var(--line); }
+.pf-row-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1.1rem; }
+.pf-row-heading h3 { font-size: clamp(1.55rem, 2.25vw, 2.4rem); line-height: 1.18; letter-spacing: -.035em; }
+.pf-row-heading > p { font-size: max(20px, 1.25rem); color: #225665; }
+.pf-rows article > p { margin-top: .75rem; max-width: 53ch; }
+.pf-processing { background: #edf5f7; }
+.pf-processing .pf-support { margin-top: 1.25rem; max-width: 40ch; }
+.pf-disclosures details { border-top: 1px solid #acbec8; }
+.pf-disclosures details:last-of-type { border-bottom: 1px solid #acbec8; }
+.pf-disclosures summary { color: var(--ink); cursor: pointer; padding-block: 1.2rem; font-size: clamp(1.25rem, 1.6vw, 1.5rem); font-weight: 600; }
+.pf-disclosures summary::marker { color: #225665; }
+.pf-steps { margin: 0; padding: 0 0 1.5rem 1.65rem; }
+.pf-steps li + li { margin-top: .7rem; }
+.pf-steps strong { color: var(--ink); }
+.pf-disclosures details > p { padding-bottom: 1.5rem; }
+.pf-science-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 1rem; font-size: max(20px, 1.25rem); color: #124f63; text-underline-offset: .25em; }
+@media (max-width: 820px) {
+  .pf-editorial { grid-template-columns: minmax(0, 1fr); }
+  .pf-editorial h2 { max-width: 22ch; }
+}
+@media (max-width: 540px) {
+  .pf-intro h1 { font-size: clamp(2.6rem, 10vw, 3.4rem); }
+  .pf-row-heading { align-items: start; flex-direction: column; }
+}
