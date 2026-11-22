@@ -152,12 +152,12 @@ h3 {font-size:clamp(1.35rem,2.2vw,2rem);letter-spacing:-.035em;line-height:1.17;
 .journal-jns span,.journal-jbo span {display:block;font-size:.96rem;letter-spacing:.035em;font-weight:500;margin-bottom:.12rem;}
 .journal-jns span {font-style:italic;}
 .support-strip {padding-block:clamp(2.8rem,5.3vw,5.5rem);background:white;}
-.support-layout {display:grid;gap:clamp(.8rem,1.4vw,1.35rem);max-width:64rem;}
+.support-layout {display:grid;gap:clamp(.8rem,1.4vw,1.35rem);}
 .support-identity {display:grid;justify-items:center;gap:clamp(.35rem,.8vw,.65rem);text-align:center;}
-.support-identity .section-label {margin-bottom:0;}
+.support-identity .section-label {justify-self:start;text-align:left;margin-bottom:0;}
 .support-mark {width:min(100%,28rem);padding-inline:clamp(.5rem,2vw,1.5rem);background:white;}
 .support-mark img {display:block;width:100%;height:auto;}
-.support-awards {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);}
+.support-awards {width:min(100%,64rem);margin-inline:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);}
 .support-awards article {border-top:2px solid #a5c6d1;padding-top:.8rem;}
 .award-label {font-size:.93rem;color:#3d6578;font-weight:590;margin-bottom:.6rem;}
 .support-awards h3 {font-size:clamp(1.25rem,2vw,1.65rem);}
